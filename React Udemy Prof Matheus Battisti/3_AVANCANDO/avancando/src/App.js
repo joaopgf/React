@@ -1,6 +1,9 @@
 
 import './App.css';
-import city from "../public/assets/city.jpg";
+import city from './assets/city.jpg';
+import ListRender from './components/ListRender';
+import ManageData from './components/ManageData';
+
 
 
 function App() {
@@ -14,8 +17,10 @@ function App() {
 
       {/*Imagem em src/assets*/}
       <div>
-        <img src={city} alt="cidade" />
+       <img src={city} alt="cidade" />
       </div>
+      <ManageData/>
+      <ListRender/>
     </div>
   );
 }
